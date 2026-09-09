@@ -1,0 +1,102 @@
+{
+  "model_type": "gaussian_naive_bayes",
+  "version": "1.0.0",
+  "trained_rows": 1800,
+  "numeric_features": [
+    "packets",
+    "bytes",
+    "port",
+    "bytes_per_packet"
+  ],
+  "categorical_features": [
+    "protocol"
+  ],
+  "classes": {
+    "Normal": {
+      "prior": 0.3333333333333333,
+      "numeric": {
+        "packets": {
+          "mean": 35.14333333333333,
+          "variance": 299.3227888888889
+        },
+        "bytes": {
+          "mean": 25133.929133333335,
+          "variance": 266820038.86298427
+        },
+        "port": {
+          "mean": 2398.135,
+          "variance": 9465031.353441667
+        },
+        "bytes_per_packet": {
+          "mean": 709.5716833333333,
+          "variance": 65507.82374266639
+        }
+      },
+      "categorical": {
+        "protocol": {
+          "TCP": 473,
+          "UDP": 127
+        }
+      },
+      "count": 600
+    },
+    "Suspicious": {
+      "prior": 0.3333333333333333,
+      "numeric": {
+        "packets": {
+          "mean": 206.93833333333333,
+          "variance": 5960.131197222222
+        },
+        "bytes": {
+          "mean": 25471.794116666668,
+          "variance": 357097854.3942712
+        },
+        "port": {
+          "mean": 670.5116666666667,
+          "variance": 1353162.7098638888
+        },
+        "bytes_per_packet": {
+          "mean": 122.79154999999999,
+          "variance": 5538.366451430834
+        }
+      },
+      "categorical": {
+        "protocol": {
+          "TCP": 345,
+          "ICMP": 137,
+          "UDP": 118
+        }
+      },
+      "count": 600
+    },
+    "Malicious": {
+      "prior": 0.3333333333333333,
+      "numeric": {
+        "packets": {
+          "mean": 1809.495,
+          "variance": 504813.77330833336
+        },
+        "bytes": {
+          "mean": 65217.859266666674,
+          "variance": 2493737770.485153
+        },
+        "port": {
+          "mean": 2349.4533333333334,
+          "variance": 9179418.614488889
+        },
+        "bytes_per_packet": {
+          "mean": 35.398583333333335,
+          "variance": 405.4778374930556
+        }
+      },
+      "categorical": {
+        "protocol": {
+          "TCP": 295,
+          "ICMP": 248,
+          "UDP": 57
+        }
+      },
+      "count": 600
+    }
+  }
+}
